@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://dk20mrdaxmxjo"]
+
+[ext_resource type="PackedScene" uid="uid://b1yinliloelxr" path="res://avião.tscn" id="1_b53vr"]
+
+[node name="bala" type="Node2D"]
+
+[node name="avião" parent="." instance=ExtResource("1_b53vr")]
+position = Vector2(58, 114)

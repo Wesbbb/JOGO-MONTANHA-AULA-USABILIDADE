@@ -1,0 +1,27 @@
+[gd_scene load_steps=5 format=3 uid="uid://b1yinliloelxr"]
+
+[ext_resource type="Script" path="res://avião.gd" id="1_fc1kw"]
+[ext_resource type="Texture2D" uid="uid://guytxk2adflk" path="res://assets/graphics/player/Player128_blue.png" id="1_rxnum"]
+[ext_resource type="PackedScene" uid="uid://de21ocerj6gh1" path="res://disparo.tscn" id="3_oeysn"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_v60pu"]
+size = Vector2(142, 81)
+
+[node name="avião" type="Node2D"]
+position = Vector2(92, 98)
+script = ExtResource("1_fc1kw")
+projectile_scene = ExtResource("3_oeysn")
+
+[node name="Area2D" type="Area2D" parent="."]
+position = Vector2(-1, 5)
+
+[node name="Player128Blue" type="Sprite2D" parent="Area2D"]
+position = Vector2(190, -14)
+texture = ExtResource("1_rxnum")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(189, -11)
+shape = SubResource("RectangleShape2D_v60pu")
+
+[node name="Marker2D" type="Marker2D" parent="."]
+position = Vector2(222, 18)

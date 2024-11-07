@@ -1,0 +1,28 @@
+[gd_scene load_steps=5 format=3 uid="uid://dvvas34ue77vj"]
+
+[ext_resource type="Texture2D" uid="uid://ce0pwq7li3qib" path="res://assets/graphics/bg/mid_ground_cloud_1.png" id="1_2tlq4"]
+[ext_resource type="Texture2D" uid="uid://bwp1d6c22dt5a" path="res://assets/graphics/bg/foreground_mountains.png" id="2_67qq5"]
+[ext_resource type="Texture2D" uid="uid://bit5rcb502m1p" path="res://assets/graphics/bg/mid_ground_cloud_2.png" id="3_h4pqv"]
+[ext_resource type="Texture2D" uid="uid://b4a0u8wcrr77s" path="res://assets/graphics/bg/farground_mountains.png" id="4_55u53"]
+
+[node name="background" type="Node2D"]
+
+[node name="MidGroundCloud1" type="Sprite2D" parent="."]
+position = Vector2(250, 336)
+texture = ExtResource("1_2tlq4")
+
+[node name="MidGroundCloud3" type="Sprite2D" parent="."]
+position = Vector2(496, -201)
+texture = ExtResource("1_2tlq4")
+
+[node name="MidGroundCloud4" type="Sprite2D" parent="."]
+position = Vector2(480, 312)
+texture = ExtResource("3_h4pqv")
+
+[node name="FargroundMountains" type="Sprite2D" parent="."]
+position = Vector2(482, 414)
+texture = ExtResource("4_55u53")
+
+[node name="ForegroundMountains2" type="Sprite2D" parent="."]
+position = Vector2(475, 596)
+texture = ExtResource("2_67qq5")

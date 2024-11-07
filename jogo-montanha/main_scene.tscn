@@ -1,0 +1,21 @@
+[gd_scene load_steps=4 format=3 uid="uid://bjccg8xix082p"]
+
+[ext_resource type="PackedScene" uid="uid://dvvas34ue77vj" path="res://background.tscn" id="1_6g4ip"]
+[ext_resource type="PackedScene" uid="uid://b1yinliloelxr" path="res://avião.tscn" id="2_o6db8"]
+[ext_resource type="PackedScene" uid="uid://cm1lvkeqhw836" path="res://rival.tscn" id="4_h7ifc"]
+
+[node name="mainScene" type="Node2D"]
+
+[node name="Timer" type="Timer" parent="."]
+one_shot = true
+
+[node name="background" parent="." instance=ExtResource("1_6g4ip")]
+position = Vector2(-21, 4)
+
+[node name="Aviao" parent="." instance=ExtResource("2_o6db8")]
+position = Vector2(299, 276)
+
+[node name="rival" parent="." instance=ExtResource("4_h7ifc")]
+position = Vector2(695, 155)
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
